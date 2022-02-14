@@ -1,1 +1,1 @@
-# bootstrapAndTialwind-progect
+# bootstrapAndTialwind-project
