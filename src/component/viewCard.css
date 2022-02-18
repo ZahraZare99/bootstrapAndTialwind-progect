@@ -1,0 +1,6 @@
+.viewCard .darkBody {
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+}
+.viewCard .footer-user {
+  grid-column: 1/-1;
+}
