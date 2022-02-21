@@ -1,11 +1,12 @@
-import react from "react";
+import React from "react";
 import { FaMicrophoneSlash } from "react-icons/fa";
 import { FaEllipsisV } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa";
 import { FaVideo } from "react-icons/fa";
 import { FaMicrophone } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import "./viewCard.css";
-class ViewCard extends react.Component {
+class ViewCard extends React.Component {
     state = {
       cardList: [
         {
@@ -62,8 +63,18 @@ class ViewCard extends react.Component {
   
     render() {
       return (
+        
         <div className="viewCard d-flex justify-content-center bg-secondary">
-          <div className="darkBody d-grid col m-3 p-1 bg-dark">
+        
+        <div className=" ">
+        <h1 className='text-center'>now in ViewCard</h1>
+        <ul>
+          <li><h6><Link to="./AboutUs">to About us</Link></h6></li>
+          <li><h6><Link to="./home"> home</Link></h6></li>
+        </ul>
+        </div> 
+
+        <div className="darkBody d-grid col m-3 p-1 bg-dark">
             {this.state.cardList.map((card, index) => {
               return (
                 <div
@@ -100,7 +111,8 @@ class ViewCard extends react.Component {
               </div>
             </div>
             </div>
-          </div>
+        </div>
+        
       );
     }
   }
